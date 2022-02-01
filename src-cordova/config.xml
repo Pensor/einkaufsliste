@@ -13,4 +13,8 @@
         <preference name="ScrollEnabled" value="true" />
         <preference name="StatusBarStyle" value="lightcontent" />
     </platform>
+    <platform name="android">
+        <preference name="StatusBarOverlaysWebView" value="true" />
+        <preference name="StatusBarBackgroundColor" value="#33005c5c" />
+    </platform>
 </widget>

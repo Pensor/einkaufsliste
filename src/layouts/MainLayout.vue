@@ -12,7 +12,7 @@
         /> -->
         <q-img class="image absolute-top" src="~assets/vegetables.jpg"></q-img>
 
-        <q-toolbar-title class="text-center q-py-lg">
+        <q-toolbar-title class="text-center q-py-lg title">
           Einkaufsliste
         </q-toolbar-title>
       </q-toolbar>
@@ -43,6 +43,9 @@ function toggleLeftDrawer() {
 </script>
 
 <style lang="scss" scoped>
+body.cordova .title {
+  padding-top: 60px;
+}
 .image {
   height: 100%;
   opacity: 0.8;
