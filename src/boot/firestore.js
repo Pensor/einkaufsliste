@@ -23,4 +23,5 @@ export default ({ app }) => {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   app.config.globalProperties.$db = firebase.firestore();
+  app.config.globalProperties.$firebase = firebase;
 }
