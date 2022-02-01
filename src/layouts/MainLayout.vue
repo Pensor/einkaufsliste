@@ -10,14 +10,17 @@
           aria-label="Menu"
           @click="toggleLeftDrawer"
         /> -->
+        <q-img class="image absolute-top" src="~assets/vegetables.jpg"></q-img>
 
-        <q-toolbar-title class="text-center"> Einkaufsliste </q-toolbar-title>
+        <q-toolbar-title class="text-center q-py-lg">
+          Einkaufsliste
+        </q-toolbar-title>
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
+    <!-- <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list></q-list>
-    </q-drawer>
+    </q-drawer> -->
 
     <q-page-container>
       <router-view />
@@ -38,3 +41,12 @@ function toggleLeftDrawer() {
   leftDrawerOpen.value = !leftDrawerOpen.value;
 }
 </script>
+
+<style lang="scss" scoped>
+.image {
+  height: 100%;
+  opacity: 0.8;
+  z-index: -1;
+  filter: grayscale(0.1);
+}
+</style>
