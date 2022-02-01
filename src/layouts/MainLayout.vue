@@ -2,14 +2,14 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-btn
+        <!-- <q-btn
           flat
           dense
           round
           icon="menu"
           aria-label="Menu"
           @click="toggleLeftDrawer"
-        />
+        /> -->
 
         <q-toolbar-title class="text-center"> Einkaufsliste </q-toolbar-title>
       </q-toolbar>
@@ -27,6 +27,10 @@
 
 <script setup>
 import { ref } from "vue";
+// import { Plugins } from "@capacitor/core";
+// const { StatusBar } = Plugins;
+
+// StatusBar.setBackgroundColor({ color: "#005c5c" });
 
 const leftDrawerOpen = ref(false);
 
